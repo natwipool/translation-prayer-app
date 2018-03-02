@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactHowler from 'react-howler';
 import raf from 'raf';
+import secToMin from 'sec-to-min';
 
 export class Player extends React.Component {
   constructor(props) {
@@ -105,21 +106,15 @@ export class Player extends React.Component {
     raf.cancel(this._raf);
   };
 
-  formatTime = (secs) => {
-    let minutes = Math.floor(secs / 60) || 0;
-    let seconds = (secs - minutes * 60) || 0;
-    return `${minutes}:${(seconds < 10 ? '0' : '')}${seconds}`
-  }
-
   render() {
     return (
       <div>
         <p>{this.state.loaded ? this.props.playlists[this.state.currentIndex].precept : 'Loading'}</p>
         <p>
           {'Status: '}
-          {this.state.seek !== undefined ? this.formatTime(Math.round(this.state.seek)) : '0.00'}
+          {this.state.seek !== undefined ? secToMin(this.state.seek) : '0.00'}
           {' / '}
-          {this.state.duration ? this.formatTime(Math.round(this.state.duration)) : '0.00'}
+          {this.state.duration ? secToMin(this.state.duration) : '0.00'}
         </p>
 
         <ReactHowler
