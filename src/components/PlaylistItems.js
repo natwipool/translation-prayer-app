@@ -66,6 +66,7 @@ export class PlaylistItems extends React.Component {
           </Link>
           <button onClick={() => {
             this.props.dispatch(removePlaylist({ id: this.props.playlist.id }));
+            this.props.history.push('/playlists')
           }}>
             ลบ
           </button>

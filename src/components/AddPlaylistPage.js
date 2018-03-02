@@ -5,7 +5,7 @@ import { addPlaylist } from '../actions/playlists';
 
 export class AddPlaylistPage extends React.Component {
   addPlaylist = playlist => {
-    this.props.onSubmit(playlist);
+    this.props.addPlaylist(playlist);
     this.props.history.push('/playlists');
   };
   render() {
