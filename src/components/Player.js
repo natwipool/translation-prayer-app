@@ -72,16 +72,20 @@ export class Player extends React.Component {
 
   handleAutoPlayNext = () => {
     this.clearRAF();
-    this.setState(prevState => ({
-      isPlaying: true,
-      currentIndex: prevState.currentIndex + 1
-    }));
-    this.props.handlePlayNext()
+    
+    if (this.state.currentIndex >= (this.sources.length - 1)) {
+      this.handleStop();
+    } else {
+      this.setState(prevState => ({
+        isPlaying: true,
+        currentIndex: prevState.currentIndex + 1
+      }));
+      this.props.handlePlayNext();
+    }  
   };
 
   playEachPrecept = playIndex => {
-    this.clearRAF();
-    console.log(playIndex);
+    this.clearRAF();   
     this.setState(() => ({
       isPlaying: true,
       currentIndex: playIndex
