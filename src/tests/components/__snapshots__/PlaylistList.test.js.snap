@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PlaylistList correctly 1`] = `
+<div>
+  <Link
+    replace={false}
+    to="/playlist/2"
+  >
+    <h3>
+      Playlist name two
+    </h3>
+  </Link>
+</div>
+`;

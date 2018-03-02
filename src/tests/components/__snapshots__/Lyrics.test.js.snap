@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Lyrics correctly 1`] = `<div />`;
+
+exports[`should render Lyrics with no playlist 1`] = `
+<div>
+  <p>
+    ไม่มีบทสวด
+  </p>
+</div>
+`;

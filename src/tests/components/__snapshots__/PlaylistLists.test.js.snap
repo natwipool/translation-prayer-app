@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PlaylistLists with no playlist 1`] = `
+<div>
+  <h1>
+    รายการบทสวดมนต์
+  </h1>
+  <Link
+    replace={false}
+    to="/create"
+  >
+    สร้างรายการสวดมนต์
+  </Link>
+  <p>
+    ไม่มีรายการสวดมนต์
+  </p>
+</div>
+`;
+
+exports[`should render PlaylistLists with playlists 1`] = `
+<div>
+  <h1>
+    รายการบทสวดมนต์
+  </h1>
+  <Link
+    replace={false}
+    to="/create"
+  >
+    สร้างรายการสวดมนต์
+  </Link>
+  <Connect(PlaylistList)
+    id="1"
+    key="1"
+    lists={
+      Array [
+        "คำทำวัตรเช้า",
+        "ตังขณิกปัจจเวกขณปาฐะ",
+        "บทพิจารณาสังขาร",
+      ]
+    }
+    name="Playlist name one"
+  />
+  <Connect(PlaylistList)
+    id="2"
+    key="2"
+    lists={
+      Array [
+        "คำทำวัตรเย็น",
+        "อตีตปัจจเวกขณปาฐะ",
+        "สรณคมนปาฐะ",
+      ]
+    }
+    name="Playlist name two"
+  />
+  <Connect(PlaylistList)
+    id="3"
+    key="3"
+    lists={
+      Array [
+        "อานาปานสติสูตร",
+        "อริยมรรคมีองค์แปด",
+        "ธัมมจักกัปปวัตตนสุตตปาฐะ",
+      ]
+    }
+    name="Playlist name three"
+  />
+</div>
+`;

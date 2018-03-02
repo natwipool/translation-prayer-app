@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EditPlaylistPage correctly 1`] = `
+<div>
+  <Connect(PlaylistForm)
+    onSubmit={[Function]}
+    playlist={
+      Object {
+        "id": "1",
+        "lists": Array [
+          "คำทำวัตรเช้า",
+          "ตังขณิกปัจจเวกขณปาฐะ",
+          "บทพิจารณาสังขาร",
+        ],
+        "name": "Playlist name one",
+      }
+    }
+  />
+</div>
+`;

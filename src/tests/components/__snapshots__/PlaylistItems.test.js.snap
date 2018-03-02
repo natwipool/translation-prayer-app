@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PlaylistItems correctly 1`] = `
+<div>
+  <div>
+    <h1>
+      Playlist name three
+    </h1>
+    <Link
+      replace={false}
+      to="/edit/3"
+    >
+      <button>
+        แก้ไข
+      </button>
+    </Link>
+    <button
+      onClick={[Function]}
+    >
+      ลบ
+    </button>
+  </div>
+  <div
+    key="0"
+  >
+    <PlaylistItem />
+    <button
+      onClick={[Function]}
+    >
+      PLAY
+    </button>
+  </div>
+  <div
+    key="1"
+  >
+    <PlaylistItem />
+    <button
+      onClick={[Function]}
+    >
+      PLAY
+    </button>
+  </div>
+  <div
+    key="2"
+  >
+    <PlaylistItem />
+    <button
+      onClick={[Function]}
+    >
+      PLAY
+    </button>
+  </div>
+  <Player
+    handlePlayButton={[Function]}
+    handlePlayNext={[Function]}
+    handlePlayPrev={[Function]}
+    handleStopButton={[Function]}
+    onRef={[Function]}
+    playlists={
+      Array [
+        undefined,
+        undefined,
+        undefined,
+      ]
+    }
+  />
+</div>
+`;

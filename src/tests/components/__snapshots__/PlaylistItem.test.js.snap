@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PlaylistItem correctly 1`] = `
+<div>
+  <h3 />
+  <p />
+</div>
+`;

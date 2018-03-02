@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should get checked value on input checked 1`] = `
+<div>
+  <input
+    name="บทพิจารณาสังขาร"
+    onChange={[Function]}
+    type="checkbox"
+    value="บทพิจารณาสังขาร"
+  />
+  <label
+    htmlFor="บทพิจารณาสังขาร"
+  >
+    บทพิจารณาสังขาร
+  </label>
+</div>
+`;
+
+exports[`should not get checked value on input unchecked 1`] = `
+<div>
+  <input
+    name="บทพิจารณาสังขาร"
+    onChange={[Function]}
+    type="checkbox"
+    value="บทพิจารณาสังขาร"
+  />
+  <label
+    htmlFor="บทพิจารณาสังขาร"
+  >
+    บทพิจารณาสังขาร
+  </label>
+</div>
+`;
+
+exports[`should render Checkbox correctly 1`] = `
+<div>
+  <input
+    name="บทพิจารณาสังขาร"
+    onChange={[Function]}
+    type="checkbox"
+    value="บทพิจารณาสังขาร"
+  />
+  <label
+    htmlFor="บทพิจารณาสังขาร"
+  >
+    บทพิจารณาสังขาร
+  </label>
+</div>
+`;
