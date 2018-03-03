@@ -8,9 +8,11 @@ export class Player extends React.Component {
     super(props);
 
     this.sources = this.props.playlists.map(
-      playlist => `/audio/${playlist.filename}`
+      playlist => playlist.filename.map((name) => (
+        `/audio/${name}`
+      ))
     );
-    
+    console.log(this.sources)
     this.state = {
       isPlaying: false,
       currentIndex: 0,
@@ -118,7 +120,7 @@ export class Player extends React.Component {
         </p>
 
         <ReactHowler
-          src={[this.sources[this.state.currentIndex]]}
+          src={this.sources[this.state.currentIndex]}
           playing={this.state.isPlaying}
           onLoad={this.handleOnLoad}
           onPlay={this.handleOnPlay}
