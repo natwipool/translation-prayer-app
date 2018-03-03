@@ -12,7 +12,7 @@ export class Player extends React.Component {
         `/audio/${name}`
       ))
     );
-    console.log(this.sources)
+    
     this.state = {
       isPlaying: false,
       currentIndex: 0,
@@ -128,6 +128,7 @@ export class Player extends React.Component {
             this.handleAutoPlayNext();
           }}
           ref={ref => (this.player = ref)}
+          html5={true}
         />
         <button
           onClick={this.handlePrev}
