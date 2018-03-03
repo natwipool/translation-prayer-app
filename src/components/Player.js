@@ -121,6 +121,7 @@ export class Player extends React.Component {
 
         <ReactHowler
           src={this.sources[this.state.currentIndex]}
+          html5={true}
           playing={this.state.isPlaying}
           onLoad={this.handleOnLoad}
           onPlay={this.handleOnPlay}
@@ -128,7 +129,6 @@ export class Player extends React.Component {
             this.handleAutoPlayNext();
           }}
           ref={ref => (this.player = ref)}
-          html5={true}
         />
         <button
           onClick={this.handlePrev}
